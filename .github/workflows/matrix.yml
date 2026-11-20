@@ -14,8 +14,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: node --version
-      - run: |
-          if [ "${{ matrix.node }}" = "24" ]; then exit 1; fi
       - name: Use a secret safely
         env:
           DEMO_TOKEN: ${{ secrets.DEMO_TOKEN }}
