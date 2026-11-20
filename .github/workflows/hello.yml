@@ -13,5 +13,5 @@ jobs:
         run: echo "Hello from GitHub Actions on $(uname -s)"
       - name: Show repo files
         run: ls -la
-      - name: Show commit SHA 
-      run: echo "Commit is ${{ github.sha }}"
+      - name: Show commit SHA
+        run: echo "Commit is ${{ github.sha }}"
